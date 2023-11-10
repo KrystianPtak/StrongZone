@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# www.krystianptak.pl/RunZone
+## Project Description:
+This React-based website is a dynamic and fully responsive platform designed for a fitness-oriented business. Leveraging the power of React and various libraries, the project incorporates modern web development practices to deliver an engaging user experience. Below are the key features and technologies used in this project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## **Impressive Performance and Optimal Practices**
+I would like to start by highlighting the outstanding success of this project. After conducting thorough tests using the Lighthouse Console tool and performing an in-depth website analysis, the results were truly impressive. All key performance indicators related to performance, accessibility, and best SEO practices are looking remarkable, nearing perfection at nearly 100%. I've attached an image showcasing these exceptional results for your reference.
 
-In the project directory, you can run:
+## **Responsive Design**
+The design of the project is made responsive, meaning that the webpage adapts to different screen sizes, ensuring optimal display on computers, tablets, and smartphones.
 
-### `npm start`
+## **React and React Router**
+The project is built using React, a powerful JavaScript library for building user interfaces.
+React Router is employed for seamless navigation between different sections of the website, providing a smooth and single-page application experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Framer Motion Animations**
+Framer Motion library is utilized to add engaging animations throughout the site, enhancing user engagement and providing a visually appealing experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Slick Carousel**
+The Slick Carousel library is integrated to create a dynamic component showcasing testimonials and logos of associated companies, adding a professional touch to the website.
 
-### `npm test`
+## **React CountUp**
+The React CountUp library is used to implement a counter feature, providing animated number transitions to highlight key statistics or achievements on the site.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Modal and Accordion Components**
+Custom modal and accordion components are implemented to enhance user interaction and provide a clean, intuitive interface.
 
-### `npm run build`
+## **Active Links and NotFound Page**
+Active links ensure that users can easily identify their current location within the website.
+A custom 404 Not Found page is included to handle any navigation errors gracefully.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Hero Component**
+A reusable Hero component with dynamic graphics is created, maintaining a consistent visual identity across various pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Blog Section with ID-based Routing**
+Each article in the blog section is assigned a unique identifier (ID), enabling dynamic routing and creating dedicated pages for a complete reading experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **ScrollToTop Functionality**
+The ScrollToTop functionality ensures that users are scrolled to the top of the page when navigating between different sections.
 
-### `npm run eject`
+## **Footer**
+A well-designed footer is included, providing essential links and information for easy navigation and contact.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **Contact**
+In the contact section, users have the ability to send inquiries via email directly from the website. To initiate this process, users need to provide their name, email address and subject. Without these details, an error prompt ensures that all necessary information is provided before sending the email.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Email, Phone, and Map Interaction**
+Clicking on the email address, phone number or map opens the respective application. Additionally, the contact section includes an interactive map that provides a visual representation of the gym's location, enhancing the overall user experience.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+<img src="lighthouse.png">
+</p>
