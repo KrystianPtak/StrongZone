@@ -40,7 +40,7 @@ const MainBackgroundItem = ({ item, currentSlide }) => {
 					animate={isInView ? "animate" : "initial"}
 					ref={ref}
 				>
-					<Link className="mainBackground__link" to="/contact">
+					<Link className="mainBackground__link" to="/StrongZone/contact">
 						Join Us
 					</Link>
 				</motion.div>

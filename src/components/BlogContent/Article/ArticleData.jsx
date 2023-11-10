@@ -64,7 +64,7 @@ const articleData = [
 		id: 6,
 		img: blogBig3,
 		alt: "Man exercising at the gym",
-		title: "title6",
+		title: "TRAIN LIKE THE CROSSFIT GAMES CHAMPION",
 		text: "Training like a CrossFit Games Champion is a demanding yet rewarding journey toward achieving elite fitness. This article serves as your comprehensive guide on what it takes to reach that level. It explores the intense training, nutrition, and mental fortitude required to excel in the world of CrossFit. We delve into the rigorous workout routines, the importance of a performance-driven diet, and the mindset that distinguishes champions. By immersing yourself in this guide, you will gain a deeper understanding of what it means to train like a CrossFit Games Champion and be better equipped to pursue peak fitness.",
 		highlight:
 			"To be a CrossFit Games Champion, you must train with the heart of a lion and the focus of an eagle.",

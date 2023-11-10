@@ -2,7 +2,7 @@ const pricingData = [
 	{
 		id: 1,
 		title: "Starter",
-		price: "59 ",
+		price: "59",
 		yoga: true,
 		fashion: true,
 		swimming: true,

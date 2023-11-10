@@ -31,7 +31,7 @@ const Navbar = () => {
 	return (
 		<nav className={navBgc ? "navbar navbar__bgc" : "navbar"}>
 			<div className="navbar__container container">
-				<Link to="/" className="navbar__logo">
+				<Link to="/StrongZone/" className="navbar__logo">
 					<p className="navbar__logo-text">StrongZone</p>
 				</Link>
 				<ul
@@ -40,27 +40,47 @@ const Navbar = () => {
 					}
 				>
 					<li>
-						<NavLink className="navbar__link" to="/" onClick={closeNav}>
+						<NavLink
+							className="navbar__link"
+							to="/StrongZone/"
+							onClick={closeNav}
+						>
 							HOME
 						</NavLink>
 					</li>
 					<li>
-						<NavLink className="navbar__link" to="/about" onClick={closeNav}>
+						<NavLink
+							className="navbar__link"
+							to="/StrongZone/about"
+							onClick={closeNav}
+						>
 							ABOUT
 						</NavLink>
 					</li>
 					<li>
-						<NavLink className="navbar__link" to="/faq" onClick={closeNav}>
+						<NavLink
+							className="navbar__link"
+							to="/StrongZone/faq"
+							onClick={closeNav}
+						>
 							FAQ
 						</NavLink>
 					</li>
 					<li>
-						<NavLink className="navbar__link" to="/blog" onClick={closeNav}>
+						<NavLink
+							className="navbar__link"
+							to="/StrongZone/blog"
+							onClick={closeNav}
+						>
 							BLOG
 						</NavLink>
 					</li>
 					<li>
-						<NavLink className="navbar__link" to="/contact" onClick={closeNav}>
+						<NavLink
+							className="navbar__link"
+							to="/StrongZone/contact"
+							onClick={closeNav}
+						>
 							CONTACT
 						</NavLink>
 					</li>

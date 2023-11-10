@@ -6,10 +6,10 @@
 	padding: 3em 0.5em;
 	background-color: $main;
 	color: $white;
+	text-align: center;
 
 	&__title {
 		font-size: 4rem;
-		text-align: center;
 	}
 
 	&__icon {
@@ -21,12 +21,14 @@
 	}
 
 	&__btn {
+		margin-top: 1em;
 		padding: 1em 2em;
-		border-radius: 8px;
+		border-radius: 6px;
 		background-color: $dark;
 		color: $white;
 		font-weight: 500;
 		border: none;
+		font-size: 1.4rem;
 	}
 }
 

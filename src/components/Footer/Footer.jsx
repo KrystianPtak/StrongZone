@@ -15,7 +15,7 @@ const Footer = () => {
 			<div className="footer__container  container">
 				<div className="footer__content">
 					<div className="footer__box">
-						<Link to="/" className="footer__logo">
+						<Link to="/StrongZone/" className="footer__logo">
 							<p className="footer__logo-text">StrongZone</p>
 						</Link>
 						<div className="footer__desc">
@@ -26,16 +26,16 @@ const Footer = () => {
 					<div className="footer__box">
 						<h3 className="footer__title">Useful Links</h3>
 						<ul className="footer__links">
-							<Link to="/about" className="footer__link">
+							<Link to="/StrongZone/about" className="footer__link">
 								About
 							</Link>
-							<Link to="/faq" className="footer__link">
+							<Link to="/StrongZone/faq" className="footer__link">
 								Faq
 							</Link>
-							<Link to="/blog" className="footer__link">
+							<Link to="/StrongZone/blog" className="footer__link">
 								Blog
 							</Link>
-							<Link to="/contact" className="footer__link">
+							<Link to="/StrongZone/contact" className="footer__link">
 								Contact
 							</Link>
 						</ul>

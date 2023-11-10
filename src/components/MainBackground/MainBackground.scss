@@ -12,7 +12,7 @@
 	}
 
 	&__arrow {
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: center;
 		position: absolute;
@@ -78,15 +78,17 @@
 		top: 50%;
 		left: 50%;
 		width: 100%;
-		max-width: 800px;
+		max-width: 600px;
 		transform: translate(-50%, -50%);
 		color: $white;
 	}
 
 	&__title {
-		font-size: 4rem;
+		font-size: 5rem;
+		padding: 0 0.5em;
 		text-align: center;
 		font-style: italic;
+		margin-bottom: 0.5em;
 	}
 
 	&__text {
@@ -106,8 +108,18 @@
 
 @media (min-width: 768px) {
 	.mainBackground {
+		&__arrow {
+			display: flex;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: $main;
+			}
+		}
+
 		&__title {
 			font-size: 6rem;
+			margin-bottom: unset;
 		}
 
 		&__text {
@@ -133,17 +145,13 @@
 			font-size: 9rem;
 		}
 
+		&__content {
+			max-width: 800px;
+		}
+
 		&__text {
 			display: block;
 			font-size: 2.2rem;
-		}
-
-		&__arrow {
-			transition: background-color 0.3s ease;
-
-			&:hover {
-				background-color: $main;
-			}
 		}
 	}
 }

@@ -29,7 +29,7 @@
 		position: absolute;
 		top: 8vh;
 		left: 0;
-		height: 40vh;
+		height: 45vh;
 		width: 100%;
 		left: -100%;
 		background-color: #111;
@@ -60,7 +60,7 @@
 		}
 
 		&__logo {
-			font-size: 4rem;
+			font-size: 3.2rem;
 		}
 
 		&__links {
@@ -85,6 +85,14 @@
 
 		&__hamburger {
 			display: none;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.navbar {
+		&__logo {
+			font-size: 3.5rem;
 		}
 	}
 }

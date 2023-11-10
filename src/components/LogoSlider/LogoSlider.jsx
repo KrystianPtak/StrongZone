@@ -9,12 +9,28 @@ const LogoSlider = () => {
 	const settings = {
 		dots: false,
 		infinite: true,
-		speed: 2000,
+		speed: 3000,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		autoplay: true,
 		arrows: false,
 		initialSlide: 0,
+		autoplaySpeed: 4000,
+
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+		],
 	};
 
 	return (

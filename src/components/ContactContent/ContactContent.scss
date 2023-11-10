@@ -52,7 +52,7 @@
 		gap: 1em;
 		height: 550px;
 		max-width: 600px;
-		padding: 1em;
+		padding: 0.5em;
 	}
 
 	&__form {
@@ -103,6 +103,14 @@
 		width: fit-content;
 		background-color: $main;
 		color: $white;
+	}
+}
+
+@media (min-width: 500px) {
+	.contact {
+		&__info {
+			padding: 1em;
+		}
 	}
 }
 

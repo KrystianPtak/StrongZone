@@ -4,6 +4,7 @@ import contact from "../../assets/contact.jpg";
 const ContactForm = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
+	const [subject, setSubject] = useState("");
 	const [message, setMessage] = useState("");
 	const [showRequiredMessage, setShowRequiredMessage] = useState(false);
 	const [showSubmittedMessage, setShowSubmittedMessage] = useState(false);
@@ -11,7 +12,7 @@ const ContactForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		if (!name || !email || !message) {
+		if (!name || !email || !subject || !message) {
 			setShowRequiredMessage(true);
 			setTimeout(() => {
 				setShowRequiredMessage(false);
@@ -22,6 +23,7 @@ const ContactForm = () => {
 				setShowSubmittedMessage(false);
 				setName("");
 				setEmail("");
+				setSubject("");
 				setMessage("");
 			}, 2000);
 		}
@@ -60,14 +62,16 @@ const ContactForm = () => {
 					<input
 						type="text"
 						placeholder="Your Subject"
-						value={message}
-						onChange={(e) => setMessage(e.target.value)}
+						value={subject}
+						onChange={(e) => setSubject(e.target.value)}
 						className="contact__input"
 					/>
 					<textarea
 						placeholder="Write Your Message"
 						cols="30"
 						rows="10"
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
 						className="contact__area"
 					></textarea>
 					{showRequiredMessage && (

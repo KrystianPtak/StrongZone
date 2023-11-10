@@ -16,7 +16,7 @@ const About = () => {
 			<FixedBg
 				cName="fixed__secondary"
 				text="Welcome To StrongZone…"
-				title="…We help to get best fitness goal"
+				title="… We help to get best fitness goal"
 			/>
 			<Message />
 		</AnimatedPage>

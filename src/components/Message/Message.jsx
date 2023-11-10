@@ -10,7 +10,7 @@ const Message = () => {
 				You can easily try our services for free, and decide which workout is
 				better for you. Just let us know what training you prefer.
 			</p>
-			<Link className="message__link" to="/contact">
+			<Link className="message__link" to="/StrongZone/contact">
 				<AiOutlineMail className="message__icon" />
 				SEND US A MESSAGE
 			</Link>

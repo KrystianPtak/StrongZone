@@ -19,13 +19,13 @@ function App() {
 			<AnimatePresence mode="wait" initial={false}>
 				<ScrollToTop />
 				<Routes location={location} key={location.pathname}>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/faq" element={<Faq />} />
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/blog/:id" element={<BlogId />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="*" element={<NotFound />} />
+					<Route path="/StrongZone" element={<Home />} />
+					<Route path="/StrongZone/about" element={<About />} />
+					<Route path="/StrongZone/faq" element={<Faq />} />
+					<Route path="/StrongZone/blog" element={<Blog />} />
+					<Route path="/StrongZone/blog/:id" element={<BlogId />} />
+					<Route path="/StrongZone/contact" element={<Contact />} />
+					<Route path="/StrongZone/*" element={<NotFound />} />
 				</Routes>
 				<Footer />
 			</AnimatePresence>
