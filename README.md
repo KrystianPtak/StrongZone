@@ -1,4 +1,4 @@
-# www.krystianptak.pl/RunZone
+# www.krystianptak.pl/StrongZone
 ## Project Description:
 This React-based website is a dynamic and fully responsive platform designed for a fitness-oriented business. Leveraging the power of React and various libraries, the project incorporates modern web development practices to deliver an engaging user experience. Below are the key features and technologies used in this project:
 
