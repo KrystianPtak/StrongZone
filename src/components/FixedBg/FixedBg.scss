@@ -6,7 +6,7 @@
 	background-blend-mode: darken;
 	background-size: cover;
 	background-position: top;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 
 	&__secondary {
 		height: 75vh;
@@ -14,7 +14,7 @@
 		background-blend-mode: darken;
 		background-size: cover;
 		background-position: top;
-		background-attachment: fixed;
+		// background-attachment: fixed;
 	}
 
 	&__content {
@@ -43,6 +43,16 @@
 		background-color: $main;
 		border-radius: 10px;
 		color: $white;
+	}
+}
+
+@media (min-width: 796px) {
+	.fixed {
+		background-attachment: fixed;
+
+		&__secondary {
+			background-attachment: fixed;
+		}
 	}
 }
 

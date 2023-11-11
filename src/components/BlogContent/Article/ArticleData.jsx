@@ -1,14 +1,7 @@
-import blogBig1 from "../../../assets/blog_big1.jpg";
-import blogBig2 from "../../../assets/blog_big2.jpg";
-import blogBig3 from "../../../assets/blog_big3.jpg";
-import blogBig4 from "../../../assets/blog_big4.jpg";
-import blogBig5 from "../../../assets/blog_big5.jpg";
-import blogBig6 from "../../../assets/blog_big6.jpg";
-
 const articleData = [
 	{
 		id: 1,
-		img: blogBig5,
+		img: "https://krystianptak.pl/StrongZone/static/media/blog_big5.a5b95635fa283f9b223f.jpg",
 		alt: "Man exercising at the gym",
 		title: "HOW TO MAXIMISE TIME SPENT AT THE GYM.",
 		text: "Efficiently using your time at the gym is key to making progress in your training. Regardless of your fitness level, there are many ways to increase the effectiveness of your workouts. Firstly, start by planning your workout sessions. Define the goals you want to achieve, whether it's increasing strength, burning fat, or improving overall health. Then, tailor your training program to these goals. Choose exercises that will best lead you to them. Don't forget proper warm-up and cooldown to avoid injuries. It's also crucial to maintain a healthy diet and ensure adequate recovery. Most importantly, be patient and persistent because achieving fitness goals is a process that takes time and effort.",
@@ -19,7 +12,7 @@ const articleData = [
 	},
 	{
 		id: 2,
-		img: blogBig4,
+		img: "https://krystianptak.pl/StrongZone/static/media/blog_big4.e70dc775326851ec6245.jpg",
 		alt: "Woman exercising at the gym",
 		title: "EVERYTHING YOU NEED TO KNOW ABOUT FITNESS",
 		text: 'Understanding fitness is essential for anyone looking to improve their health and well-being. "EVERYTHING YOU NEED TO KNOW ABOUT FITNESS" is a comprehensive guide that provides a wealth of knowledge. It covers the basics of exercise, nutrition, and the latest fitness trends. This article aims to be your go-to resource for all things fitness-related. By delving into the information presented, you can make more informed decisions and take effective steps on your fitness journey.',
@@ -30,7 +23,7 @@ const articleData = [
 	},
 	{
 		id: 3,
-		img: blogBig6,
+		img: "https://krystianptak.pl/StrongZone/static/media/blog_big6.27f7031e8a064fb00833.jpg",
 		alt: "Woman exercising at the gym",
 		title: "FITNESS HELPS YOU THINK AND FEEL BETTER",
 		text: 'The link between fitness and mental well-being is undeniable. Engaging in regular physical activity can have a profound impact on your cognitive abilities and emotional state. "FITNESS HELPS YOU THINK AND FEEL BETTER" is a powerful mantra that underscores the importance of exercise not only for your physical health but also for your mental and emotional health. Exercise releases endorphins, which are known as "feel-good" hormones. They reduce stress, alleviate anxiety and depression, and boost your overall mood. Moreover, physical fitness enhances cognitive functions, including memory, problem-solving, and creativity. By making fitness a part of your lifestyle, you can experience the tremendous benefits of a healthier body and a sharper mind.',
@@ -40,7 +33,7 @@ const articleData = [
 	},
 	{
 		id: 4,
-		img: blogBig2,
+		img: "https://krystianptak.pl/StrongZone/static/media/blog_big2.229057cb8e84fd1a119f.jpg",
 		alt: "Man exercising at the gym",
 		title: "TODAY IS THE BEST DAY TO START TRAINING",
 		text: 'The decision to embark on a fitness journey can be life-changing, and "TODAY IS THE BEST DAY TO START TRAINING" encapsulates the urgency and enthusiasm needed to take that first step. Procrastination only delays the potential benefits of a healthier lifestyle. Starting your training today sets the wheels in motion for a better, stronger future. Whether your goal is to build strength, increase stamina, or simply lead a more active life, the moment you begin is when you truly invest in your well-being',
@@ -51,7 +44,7 @@ const articleData = [
 	},
 	{
 		id: 5,
-		img: blogBig1,
+		img: "https://krystianptak.pl/StrongZone/static/media/blog_big1.21fc4cc9948db5bb695c.jpg",
 		alt: "Woman exercising at the gym",
 		title: "Individual Training: Where to Begin",
 		text: "Embarking on an individual training journey is an empowering step toward enhancing your physical fitness and overall well-being. 'Individual Training: Where to Begin' is a guide that serves as a roadmap for those eager to make progress on their unique fitness path. This comprehensive resource outlines the essential starting points, emphasizing the significance of personalized workouts and goal setting. It introduces fundamental principles, from exercise routines and nutrition choices to developing a mindset for success. By delving into this guide, you'll gain a clear understanding of how to kickstart your individual training journey and set yourself on the path to reaching your fitness objectives.",
@@ -62,7 +55,7 @@ const articleData = [
 	},
 	{
 		id: 6,
-		img: blogBig3,
+		img: "https://krystianptak.pl/StrongZone/static/media/blog_big3.642eebade647e8879d12.jpg",
 		alt: "Man exercising at the gym",
 		title: "TRAIN LIKE THE CROSSFIT GAMES CHAMPION",
 		text: "Training like a CrossFit Games Champion is a demanding yet rewarding journey toward achieving elite fitness. This article serves as your comprehensive guide on what it takes to reach that level. It explores the intense training, nutrition, and mental fortitude required to excel in the world of CrossFit. We delve into the rigorous workout routines, the importance of a performance-driven diet, and the mindset that distinguishes champions. By immersing yourself in this guide, you will gain a deeper understanding of what it means to train like a CrossFit Games Champion and be better equipped to pursue peak fitness.",

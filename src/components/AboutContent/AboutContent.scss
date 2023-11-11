@@ -11,8 +11,8 @@
 	}
 
 	&__img {
-		height: 100%;
 		object-fit: cover;
+		height: 400px;
 	}
 
 	&__title {
@@ -50,6 +50,10 @@
 			flex-direction: row;
 			gap: 3em;
 			max-width: unset;
+		}
+
+		&__img {
+			height: 100%;
 		}
 
 		&__img-container {

@@ -7,7 +7,7 @@ const CallBack = () => {
 	const [openModal, setOpenModal] = useState(false);
 
 	return (
-		<div className="callBack">
+		<section className="callBack">
 			<h2 className="callBack__title">
 				We Are Professional And Expert In Fitness
 			</h2>
@@ -18,7 +18,7 @@ const CallBack = () => {
 				Send Request
 			</button>
 			<Modal open={openModal} onClose={() => setOpenModal(false)} />
-		</div>
+		</section>
 	);
 };
 

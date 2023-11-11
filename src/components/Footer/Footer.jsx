@@ -26,18 +26,26 @@ const Footer = () => {
 					<div className="footer__box">
 						<h3 className="footer__title">Useful Links</h3>
 						<ul className="footer__links">
-							<Link to="/StrongZone/about" className="footer__link">
-								About
-							</Link>
-							<Link to="/StrongZone/faq" className="footer__link">
-								Faq
-							</Link>
-							<Link to="/StrongZone/blog" className="footer__link">
-								Blog
-							</Link>
-							<Link to="/StrongZone/contact" className="footer__link">
-								Contact
-							</Link>
+							<li>
+								<Link to="/StrongZone/about" className="footer__link">
+									About
+								</Link>
+							</li>
+							<li>
+								<Link to="/StrongZone/faq" className="footer__link">
+									Faq
+								</Link>
+							</li>
+							<li>
+								<Link to="/StrongZone/blog" className="footer__link">
+									Blog
+								</Link>
+							</li>
+							<li>
+								<Link to="/StrongZone/contact" className="footer__link">
+									Contact
+								</Link>
+							</li>
 						</ul>
 					</div>
 					<div className="footer__box">

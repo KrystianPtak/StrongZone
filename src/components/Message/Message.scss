@@ -3,17 +3,19 @@
 .message {
 	@include flexCenter(column);
 	gap: 1em;
-	padding: 3em 1em;
+	padding: 3em 1em 2em;
 	background-color: rgb(230, 229, 228);
 
 	&__title {
 		font-size: 4rem;
+		text-align: center;
 	}
 
 	&__link {
 		display: flex;
 		align-items: center;
 		gap: 0.5em;
+		margin-top: 0.5em;
 		padding: 0.8em 1.8em;
 		background-color: $main;
 		color: $white;
