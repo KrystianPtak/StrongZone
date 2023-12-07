@@ -49,5 +49,5 @@ Clicking on the email address, phone number or map opens the respective applicat
 
 
 <p align="center">
-<img src="lighthouse.png">
+<img src="lighthouse1.png">
 </p>
