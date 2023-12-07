@@ -1,32 +1,38 @@
 import React, { useState } from "react";
+import { Formik, Form, ErrorMessage, Field } from "formik";
+import * as Yup from "yup";
 import contact from "../../assets/contact.webp";
 
 const ContactForm = () => {
-	const [name, setName] = useState("");
-	const [email, setEmail] = useState("");
-	const [subject, setSubject] = useState("");
-	const [message, setMessage] = useState("");
-	const [showRequiredMessage, setShowRequiredMessage] = useState(false);
-	const [showSubmittedMessage, setShowSubmittedMessage] = useState(false);
+	const [formSubmitted, setFormSubmitted] = useState(false);
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
+	const initialValues = {
+		name: "",
+		email: "",
+		subject: "",
+		textarea: "",
+	};
 
-		if (!name || !email || !subject || !message) {
-			setShowRequiredMessage(true);
-			setTimeout(() => {
-				setShowRequiredMessage(false);
-			}, 2000);
-		} else {
-			setShowSubmittedMessage(true);
-			setTimeout(() => {
-				setShowSubmittedMessage(false);
-				setName("");
-				setEmail("");
-				setSubject("");
-				setMessage("");
-			}, 2000);
-		}
+	const validationSchema = Yup.object({
+		name: Yup.string().required("Name is required").max(20),
+		email: Yup.string()
+			.required("Email is required")
+			.email("Invalid email address"),
+		subject: Yup.string()
+			.required("Subject is required")
+			.min(5, "Subject must be at least 5 characters"),
+		textarea: Yup.string()
+			.required("Message is required")
+			.min(15, "Textarea must be at least 15 characters"),
+	});
+
+	const handleSubmit = (_, { resetForm }) => {
+		setFormSubmitted(true);
+		resetForm();
+
+		setTimeout(() => {
+			setFormSubmitted(false);
+		}, 2000);
 	};
 
 	return (
@@ -42,48 +48,74 @@ const ContactForm = () => {
 					Get in touch with us! We're ready to assist and chat about your
 					questions and needs.
 				</p>
-				<form onSubmit={handleSubmit} className="contact__form">
-					<div className="contact__inputs">
-						<input
-							type="text"
-							placeholder="Your Name"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
-							className="contact__input"
-						/>
-						<input
-							type="email"
-							placeholder="Your Email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
-							className="contact__input"
-						/>
-					</div>
-					<input
-						type="text"
-						placeholder="Your Subject"
-						value={subject}
-						onChange={(e) => setSubject(e.target.value)}
-						className="contact__input"
-					/>
-					<textarea
-						placeholder="Write Your Message"
-						cols="30"
-						rows="10"
-						value={message}
-						onChange={(e) => setMessage(e.target.value)}
-						className="contact__area"
-					></textarea>
-					{showRequiredMessage && (
-						<p className="contact__required">* All fields are required.</p>
-					)}
-					{showSubmittedMessage && (
-						<p className="contact__sent">Your message was sent successfully!</p>
-					)}
-					<button className="contact__btn" type="submit">
-						SEND MESSAGE
-					</button>
-				</form>
+				<Formik
+					onSubmit={handleSubmit}
+					initialValues={initialValues}
+					validationSchema={validationSchema}
+				>
+					<Form className="contact__form">
+						<div>
+							<Field
+								className="contact__input"
+								type="text"
+								name="name"
+								placeholder="Your name"
+							/>
+							<ErrorMessage
+								name="name"
+								component="span"
+								className="contact__error"
+							/>
+						</div>
+						<div>
+							<Field
+								className="contact__input"
+								type="email"
+								name="email"
+								placeholder="Your email"
+							/>
+							<ErrorMessage
+								name="email"
+								component="span"
+								className="contact__error"
+							/>
+						</div>
+						<div>
+							<Field
+								className="contact__input"
+								type="text"
+								name="subject"
+								placeholder="Your Subject"
+							/>
+							<ErrorMessage
+								name="subject"
+								component="span"
+								className="contact__error"
+							/>
+						</div>
+						<div>
+							<Field
+								as="textarea"
+								name="textarea"
+								placeholder="Write Your Message"
+								className="contact__area"
+							/>
+							<ErrorMessage
+								name="textarea"
+								component="span"
+								className="contact__error contact__error-line"
+							/>
+						</div>
+						<button className="contact__btn" type="submit">
+							SEND MESSAGE
+						</button>
+						{formSubmitted && (
+							<p className="contact__sent">
+								Your message was sent successfully!
+							</p>
+						)}
+					</Form>
+				</Formik>
 			</div>
 		</>
 	);

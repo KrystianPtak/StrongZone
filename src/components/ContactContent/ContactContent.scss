@@ -50,9 +50,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
-		height: 550px;
+		height: auto;
 		max-width: 600px;
-		padding: 0.5em;
+		padding: 0 1em 1.5em;
 	}
 
 	&__form {
@@ -70,11 +70,6 @@
 		color: rgb(26, 26, 26);
 	}
 
-	&__inputs {
-		display: flex;
-		gap: 1em;
-	}
-
 	&__input {
 		width: 100%;
 		padding: 1em;
@@ -82,16 +77,26 @@
 		border: 1px solid rgb(134, 134, 134);
 	}
 
-	&__area {
-		padding: 1em;
-		min-height: 100px;
-		max-height: 300px;
-		resize: vertical;
-		outline: none;
+	&__error {
+		display: block;
+		height: 0.8em;
+		padding: 0.1em 0;
+		margin-left: 0.1em;
+		font-size: 1.4rem;
+		color: rgb(177, 14, 14);
+
+		&-line {
+			line-height: 0.8;
+		}
 	}
 
-	&__required {
-		color: rgb(196, 10, 10);
+	&__area {
+		width: 100%;
+		padding: 1em;
+		min-height: 130px;
+		max-height: 170px;
+		resize: vertical;
+		outline: none;
 	}
 
 	&__sent {
@@ -109,7 +114,7 @@
 @media (min-width: 500px) {
 	.contact {
 		&__info {
-			padding: 1em;
+			padding-bottom: 2em;
 		}
 	}
 }
@@ -143,6 +148,7 @@
 		}
 
 		&__info {
+			height: 650px;
 			padding: 2em;
 		}
 
