@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import contact from "../../assets/contact.jpg";
+import contact from "../../assets/contact.webp";
 
 const ContactForm = () => {
 	const [name, setName] = useState("");

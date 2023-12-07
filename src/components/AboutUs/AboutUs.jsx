@@ -1,5 +1,5 @@
 import AboutContent from "../AboutContent/AboutContent";
-import about from "../../assets/about.jpg";
+import about from "../../assets/about.webp";
 
 const AboutUs = () => {
 	return (

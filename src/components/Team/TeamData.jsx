@@ -1,6 +1,6 @@
-import team1 from "../../assets/team1.jpg";
-import team2 from "../../assets/team2.jpg";
-import team3 from "../../assets/team3.jpg";
+import team1 from "../../assets/team1.webp";
+import team2 from "../../assets/team2.webp";
+import team3 from "../../assets/team3.webp";
 
 const teamData = [
 	{

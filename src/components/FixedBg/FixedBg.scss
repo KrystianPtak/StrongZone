@@ -2,19 +2,17 @@
 
 .fixed {
 	height: 60vh;
-	background: url("../../assets/fitnessClass.jpg") rgba(0, 0, 0, 0.6);
+	background: url("../../assets/fitnessClass.webp") rgba(0, 0, 0, 0.6);
 	background-blend-mode: darken;
 	background-size: cover;
 	background-position: top;
-	// background-attachment: fixed;
 
 	&__secondary {
 		height: 75vh;
-		background: url("../../assets/blog_big1.jpg") rgba(0, 0, 0, 0.6);
+		background: url("../../assets/blog_big1.webp") rgba(0, 0, 0, 0.6);
 		background-blend-mode: darken;
 		background-size: cover;
 		background-position: top;
-		// background-attachment: fixed;
 	}
 
 	&__content {

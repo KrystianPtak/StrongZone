@@ -2,7 +2,7 @@ import AboutContent from "../AboutContent/AboutContent";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import AnimationVariants from "../AnimationVariants/AnimationVariants";
-import fitness from "../../assets/fitness.jpg";
+import fitness from "../../assets/fitness.webp";
 
 const Fitness = () => {
 	const ref = useRef();

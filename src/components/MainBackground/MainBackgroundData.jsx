@@ -1,6 +1,6 @@
-import bgc1 from "../../assets/bgc1.jpg";
-import bgc2 from "../../assets/blog_big1.jpg";
-import bgc3 from "../../assets/bgc3.jpg";
+import bgc1 from "../../assets/bgc1.webp";
+import bgc2 from "../../assets/blog_big1.webp";
+import bgc3 from "../../assets/bgc3.webp";
 
 const sliderItems = [
 	{

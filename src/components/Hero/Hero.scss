@@ -3,7 +3,7 @@
 .hero {
 	&__img {
 		height: 50vh;
-		background: url("../../assets/hero.jpg") rgba(0, 0, 0, 0.8);
+		background: url("../../assets/hero.webp") rgba(0, 0, 0, 0.8);
 		background-blend-mode: darken;
 		background-size: cover;
 		background-position: center;
@@ -19,7 +19,7 @@
 
 	&__img-blog {
 		height: 50vh;
-		background: url("../../assets/hero_blog.jpg") rgba(0, 0, 0, 0.8);
+		background: url("../../assets/hero_blog.webp") rgba(0, 0, 0, 0.8);
 		background-blend-mode: darken;
 		background-size: cover;
 		background-position: top;
