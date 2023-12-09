@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 
-const PricingItem = ({ title, price, yoga, fashion, swimming }) => {
+const PricingItem = ({ title, price, yoga, fashion, swimming, bestOffer }) => {
 	const items = [
 		{ label: "GYM & Fitness" },
 		{ label: "Boxing Training" },
@@ -11,7 +11,11 @@ const PricingItem = ({ title, price, yoga, fashion, swimming }) => {
 	];
 
 	return (
-		<div className="pricing__box">
+		<div
+			className="pricing__box"
+			style={{ backgroundColor: bestOffer ? "#111" : "" }}
+		>
+			{bestOffer && <span className="pricing__best-offer">Best Offer</span>}
 			<h3 className="pricing__box-title">{title}</h3>
 			<p className="pricing__price">
 				${price} <span className="pricing__month">/monthly</span>

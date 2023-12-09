@@ -8,6 +8,7 @@ import Team from "../components/Team/Team";
 import Testimonials from "../components/Testimonials/Testimonials";
 import CallBack from "../components/CallBack/CallBack";
 import LogoSlider from "../components/LogoSlider/LogoSlider";
+import NewProducts from "../components/NewProducts/NewProducts";
 
 const Home = () => {
 	return (
@@ -19,12 +20,18 @@ const Home = () => {
 				text="WHATEVER YOUR MOOD IS…"
 				title="… We’ve got a Fitness Class for it!"
 			/>
-			<Pricing />
+			<NewProducts />
 			<Counter />
 			<Team />
+			<FixedBg
+				cName="fixed__secondary"
+				text="Welcome To StrongZone…"
+				title="… We help to get best fitness goal"
+			/>
+			<Pricing />
 			<Testimonials />
-			<CallBack />
 			<LogoSlider />
+			<CallBack />
 		</AnimatedPage>
 	);
 };

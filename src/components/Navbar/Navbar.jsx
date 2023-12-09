@@ -3,8 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaShoppingCart } from "react-icons/fa";
+import { useContext } from "react";
+import { CartContext } from "../ShopContext/ShopContext";
 
 const Navbar = () => {
+	const { totalCartItems } = useContext(CartContext);
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleClick = () => {
@@ -60,6 +64,15 @@ const Navbar = () => {
 					<li>
 						<NavLink
 							className="navbar__link"
+							to="/StrongZone/shop"
+							onClick={closeNav}
+						>
+							SHOP
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							className="navbar__link"
 							to="/StrongZone/faq"
 							onClick={closeNav}
 						>
@@ -82,6 +95,18 @@ const Navbar = () => {
 							onClick={closeNav}
 						>
 							CONTACT
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							className="navbar__cart-link"
+							to="/StrongZone/cart"
+							onClick={closeNav}
+						>
+							<div className="navbar__cart">
+								<span className="navbar__quantity">{totalCartItems()}</span>
+								<FaShoppingCart className="navbar__basket" />
+							</div>
 						</NavLink>
 					</li>
 				</ul>

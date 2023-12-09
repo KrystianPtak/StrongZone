@@ -1,10 +1,10 @@
 @import "../../global.scss";
 
 .pricing {
-	padding: 4em 0 6em;
+	padding: 4em 0 8em;
 
 	&__title {
-		margin-bottom: 1.5em;
+		margin-bottom: 1em;
 		padding: 0.5em;
 		text-align: center;
 		font-size: 4rem;
@@ -18,10 +18,25 @@
 	}
 
 	&__box {
+		position: relative;
 		width: 300px;
 		padding: 2em;
 		background-color: #222222;
 		color: $white;
+		overflow: hidden;
+	}
+
+	&__best-offer {
+		position: absolute;
+		background-color: $main;
+		top: 10px;
+		right: -70px;
+		width: 200px;
+		text-align: center;
+		padding: 0.4em;
+		font-size: 1.4rem;
+		transform: rotate(35deg); // Adjust the angle as needed
+		// transform-origin: bottom right; // Set the origin to the bottom right corner
 	}
 
 	&__box-title {

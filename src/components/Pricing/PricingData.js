@@ -13,6 +13,7 @@ const pricingData = [
 		price: "99",
 		fashion: true,
 		swimming: true,
+		bestOffer: true,
 	},
 	{
 		id: 3,

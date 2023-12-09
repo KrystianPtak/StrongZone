@@ -37,9 +37,43 @@
 		z-index: 10;
 	}
 
-	&__link {
+	&__link,
+	&__cart-link {
 		padding: 0.4em;
 		color: $white;
+	}
+
+	&__link {
+		&.active {
+			color: $main;
+			font-weight: 500;
+		}
+	}
+
+	&__cart-link {
+		&.active {
+			color: unset;
+		}
+	}
+
+	&__cart {
+		position: relative;
+	}
+
+	&__quantity {
+		@include flexCenter(row);
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: -10px;
+		left: 6px;
+		border-radius: 50%;
+		font-size: 1.2rem;
+		background-color: rgb(202, 10, 10);
+	}
+
+	&__basket {
+		font-size: 2.4rem;
 	}
 
 	&__links-active {
@@ -95,9 +129,4 @@
 			font-size: 3.5rem;
 		}
 	}
-}
-
-.active {
-	color: $main;
-	font-weight: 500;
 }

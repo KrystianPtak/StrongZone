@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
 	const sliderSettings = {
-		dots: true,
 		infinite: true,
 		speed: 2000,
 		slidesToShow: 3,

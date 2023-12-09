@@ -10,25 +10,31 @@ import BlogId from "./components/BlogContent/Article/Article";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./components/NotFound/NotFound";
-
+import Shop from "./pages/Shop";
+import Cart from "./pages/Cart";
+import ShopContext from "./components/ShopContext/ShopContext";
 function App() {
 	const location = useLocation();
 	return (
 		<>
-			<Navbar />
-			<AnimatePresence mode="wait" initial={false}>
-				<ScrollToTop />
-				<Routes location={location} key={location.pathname}>
-					<Route path="/StrongZone" element={<Home />} />
-					<Route path="/StrongZone/about" element={<About />} />
-					<Route path="/StrongZone/faq" element={<Faq />} />
-					<Route path="/StrongZone/blog" element={<Blog />} />
-					<Route path="/StrongZone/blog/:id" element={<BlogId />} />
-					<Route path="/StrongZone/contact" element={<Contact />} />
-					<Route path="/StrongZone/*" element={<NotFound />} />
-				</Routes>
-				<Footer />
-			</AnimatePresence>
+			<ShopContext>
+				<Navbar />
+				<AnimatePresence mode="wait" initial={false}>
+					<ScrollToTop />
+					<Routes location={location} key={location.pathname}>
+						<Route path="/StrongZone" element={<Home />} />
+						<Route path="/StrongZone/about" element={<About />} />
+						<Route path="/StrongZone/shop" element={<Shop />} />
+						<Route path="/StrongZone/faq" element={<Faq />} />
+						<Route path="/StrongZone/blog" element={<Blog />} />
+						<Route path="/StrongZone/blog/:id" element={<BlogId />} />
+						<Route path="/StrongZone/contact" element={<Contact />} />
+						<Route path="/StrongZone/cart" element={<Cart />} />
+						<Route path="/StrongZone/*" element={<NotFound />} />
+					</Routes>
+					<Footer />
+				</AnimatePresence>
+			</ShopContext>
 		</>
 	);
 }

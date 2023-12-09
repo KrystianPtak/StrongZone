@@ -4,7 +4,7 @@
 	@include flexCenter(column);
 	gap: 0.5em;
 	position: relative;
-	padding: 3em 2em;
+	padding: 3em 4em;
 	background-color: rgb(14, 14, 14);
 
 	&__overlay {
@@ -30,7 +30,6 @@
 	&__form {
 		@include flexCenter(column);
 		gap: 1em;
-		width: 90%;
 	}
 
 	&__input {
@@ -38,7 +37,18 @@
 		width: 100%;
 	}
 
+	&__error {
+		font-size: 1.4rem;
+		color: rgb(201, 10, 10);
+		line-height: 0;
+	}
+
+	&__success {
+		color: rgb(13, 139, 13);
+	}
+
 	&__btn {
+		margin-top: 1em;
 		padding: 0.8em 2.8em;
 		width: fit-content;
 		background-color: $main;
