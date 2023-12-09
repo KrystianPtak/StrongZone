@@ -13,6 +13,15 @@ The design of the project is made responsive, meaning that the webpage adapts to
 The project is built using React, a powerful JavaScript library for building user interfaces.
 React Router is employed for seamless navigation between different sections of the website, providing a smooth and single-page application experience.
 
+## **Formik for Form Validation**
+Formik is implemented for form validation, providing a robust and efficient way to validate forms throughout the website. This ensures data integrity and a smooth user input experience.
+
+## **Add to Cart**
+Each product has an "Add to Cart" button, allowing users to add items to their cart. After adding, users receive confirmation, and the quantity and total price of items in the cart are updated.
+
+## **Persistent Cart**
+Items added to the cart remain even after refreshing the page or leaving the site, enhancing shopping convenience and comfort.
+
 ## **Framer Motion Animations**
 Framer Motion library is utilized to add engaging animations throughout the site, enhancing user engagement and providing a visually appealing experience.
 
