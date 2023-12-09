@@ -16,7 +16,7 @@ const TotalAmount = () => {
 	const closeModal = () => {
 		setIsModalOpen(false);
 		resetCart();
-		navigate("/StrongZone");
+		navigate("/StrongZone/");
 	};
 
 	return (
