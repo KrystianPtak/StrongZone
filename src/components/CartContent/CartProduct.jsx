@@ -27,7 +27,7 @@ const CartProduct = (props) => {
 						<AiOutlinePlus className="cart__action-icon" />
 					</button>
 				</td>
-				<td className="cart__total">${singleProductAmount(id)}</td>
+				<td className="cart__total">${singleProductAmount(id).toFixed(2)}</td>
 			</tr>
 		</>
 	);
